@@ -31,3 +31,146 @@
   max-height: 200px;
   max-width: 200px;
 }
+
+.bottom-bar {
+  width: 100%;
+  height: 50px;
+  bottom: 0;
+  position: absolute;
+  background-color: #ffffff;
+  border: solid 1px #979797;
+  justify-content: space-between;
+  display: flex;
+}
+
+.bottom-bar-icon {
+  width: 40px;
+  height: 40px;
+  margin-top: 3px;
+  margin-left: 5px;
+  font-size: 30px;
+  color: #3e3e3e;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.paddingTop6{
+  padding-top: 6px;
+}
+
+.icon-active {
+    color: #089b9a
+}
+
+.user-info {
+    width: 100%;
+    height: 85px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+}
+
+.user-pic {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin-left: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.user-name {
+    font-family: 'roboto';
+    font-size: 25px;
+    margin-left: 20px;
+    font-weight: 500;
+    text-align: left;
+    color: #3e3e3e;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.user-cpf {
+    font-family: 'roboto';
+    font-size: 15px;
+    margin-left: 20px;
+    font-weight: 500;
+    text-align: left;
+    color: #aeaeae;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.paddingTop20 {
+    padding-top: 20px;
+}
+
+.user-settings {
+    float: right;
+    margin-top: auto;
+    margin-bottom: 33px;
+    margin-left: auto;
+    margin-right: 25px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.amount-text {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    color: #aeaeae;
+    display: flex;
+}
+
+.amount-value {
+    float: left;
+    font-size: 65px;
+    color: #089b9a;
+    display: flex;
+}
+
+.amount-value-money {
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 20px
+}
+
+.premmia-box {
+    width: 100%;
+    height: 171px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    margin-top: 160px;
+}
+
+.padding20Both {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.balance-box {
+    width: 100%;
+    height: 120px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.balance-box p {
+    width: 370px;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    color: #aeaeae;
+}
+
+.transfer-balance {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: #188b47;
+}
