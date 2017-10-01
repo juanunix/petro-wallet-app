@@ -17,7 +17,7 @@ export default class History extends Component {
         let query = new Parse.Query('History');
         query.equalTo("user", this.currentUser).find().then((histories) => {
             let total = 0;
-            histories.forEach((h) => {total += h.get("value")});
+            histories.forEach((h) => {total += (-1)*h.get("value")});
             this.setState({histories, total})
         }, (error) => {
             console.error(error);
@@ -38,7 +38,7 @@ export default class History extends Component {
                         {this.state.histories.length > 0 ? <ul>
                             {this.state.histories.map((h) => (
                                 <li key={h.id}>
-                                    {`R$ ${h.get('value').toFixed(2).toString().replace(".", ",")}`}
+                                    {`R$ ${((-1)*h.get('value')).toFixed(2).toString().replace(".", ",")}`}
                                     <span>{" "+h.get('createdAt').getHours()+":"+h.get('createdAt').getMinutes()}</span>
                                     <span>{`${h.get('createdAt').getDate()} ${monthNames[h.get('createdAt').getUTCMonth()].substr(0, 3)}`}</span>
                                 </li>
