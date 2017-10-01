@@ -217,3 +217,11 @@
     font-size: x-large;
     padding: 25px 10px;
 }
+
+.premmia-points {
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: #3e3e3e;
+}

@@ -28,9 +28,9 @@ class Routes extends Component {
                         <Route path={'/cards'} component={Cards}/>
                     </div> : <QRCodeGen/>
                 }
-                <FloatingActionButton style={{marginRight: 20, float: 'right', bottom: 0, position: 'relative'}}
+                <FloatingActionButton style={{marginRight: 20, float: 'right', bottom: 73, backgroundColor: '#089b9a', position: 'absolute', right: 0}}
                 onClick={() => this.setState({mode: this.state.mode === 'add' ? 'remove' : 'add'})}>
-                    {this.state.mode === 'add' ? <span className='mdi mdi-cash'/> : <span className='mdi mdi-minus'/>}
+                    {this.state.mode === 'add' ? <img src={'/icons/Qrcode.png'} style={{height: 36}}/> : <span className='mdi mdi-minus'/>}
                 </FloatingActionButton>
                 <div className='bottom-bar'>
                     <Link to={'/'} className='bottom-bar-icon'>

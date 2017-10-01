@@ -52,8 +52,10 @@ export default class Home extends Component {
                         </div>
                         {this.state.mode === 'dashboard' ?
                             <div className='premmia-box'>
-                                <img alt={'premmia'} src={'/icons/Premia.png'} style={{width: 150, height: 50}}/>
-                                <p>{this.currentUser.get("premmiaPoints") || 0}</p>
+                                <div style={{paddingTop: 10,width: '100%'}}>
+                                    <img alt={'premmia'} src={'/icons/Premia.png'} style={{width: 97, height: 35}}/>
+                                    <p className='premmia-points'>{this.currentUser.get("premmiaPoints") || 0}</p>
+                                </div>
                             </div> : <AddBalance
                                 onRecharge={this.recharge.bind(this)}
                                 onChangeValue={(value) => this.setState({value})}
