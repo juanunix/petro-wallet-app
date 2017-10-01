@@ -39,7 +39,7 @@ export default class History extends Component {
                             {this.state.histories.map((h) => (
                                 <li key={h.id}>
                                     {`R$ ${((-1)*h.get('value')).toFixed(2).toString().replace(".", ",")}`}
-                                    <span>{" "+h.get('createdAt').getHours()+":"+h.get('createdAt').getMinutes()}</span>
+                                    <span>{" "+h.get('createdAt').getHours()+":"+h.get('createdAt').getMinutes()+' '}</span>
                                     <span>{`${h.get('createdAt').getDate()} ${monthNames[h.get('createdAt').getUTCMonth()].substr(0, 3)}`}</span>
                                 </li>
                             ))}
