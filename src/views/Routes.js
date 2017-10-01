@@ -3,6 +3,7 @@ import {Link, Route} from 'react-router-dom';
 
 import Home from './Home';
 import Transfer from './Transfer';
+import History from './History';
 
 import '../../node_modules/mdi/css/materialdesignicons.min.css'
 
@@ -14,6 +15,7 @@ class Routes extends Component {
             <div>
                 <Route exact path={'/'} component={Home}/>
                 <Route exact path={'/transfer'} component={Transfer}/>
+                <Route path={'/history'} component={History}/>
                 <div className='bottom-bar'>
                     <Link to={'/'} className='bottom-bar-icon'>
                         <img className={'bottom-bar-icon'} src={pathname === '/' ?
